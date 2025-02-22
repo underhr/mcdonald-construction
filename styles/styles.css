@@ -1,0 +1,84 @@
+@font-face {
+  font-family: kantumruy;
+  src: url("../fonts/Kantumruy_Pro/KantumruyPro-VariableFont_wght.ttf");
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  padding-top: 20px;
+}
+
+body {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  height: 100vh;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  gap: 15px;
+}
+header img {
+  width: 40%;
+}
+header h1 {
+  width: 60%;
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+  font-family: kantumruy;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 120%;
+}
+
+#services {
+  width: 100%;
+  text-align: center;
+}
+#services h1 {
+  font-family: kantumruy;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 100%;
+  color: rgb(61, 96, 215);
+  margin: 20px;
+}
+#services #services-flex {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+#services #services-flex div {
+  font-family: kantumruy;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 150%;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+  }
+  header img {
+    width: 80%;
+  }
+  header h1 {
+    width: 100%;
+  }
+}/*# sourceMappingURL=styles.css.map */

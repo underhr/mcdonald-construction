@@ -1,0 +1,82 @@
+$blue: rgb(61, 96, 215);
+
+@mixin flex($justify, $align, $direction) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+
+@mixin text($weight, $size, $height) {
+    font-family: kantumruy;
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $height;
+}
+
+@font-face {
+    font-family: kantumruy;
+    src: url('../fonts/Kantumruy_Pro/KantumruyPro-VariableFont_wght.ttf');
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    padding-top: 20px;
+}
+body {
+    @include flex(flex-start, center, column);
+    gap: 50px;
+    height: 100vh;
+    padding: 20px;
+}
+
+header {
+    @include flex(space-evenly, center, row);
+    gap: 15px;
+    img {
+        width: 40%;
+    }
+    h1 {
+        width: 60%;
+        padding: 10px;
+        text-align: center;
+        font-size: 30px;
+        @include text(500, 30px, 120%);
+    }
+}
+
+#services {
+    width: 100%;
+    text-align: center;
+    h1 {
+        @include text(600, 35px, 100%);
+        color: $blue;
+        margin: 20px;
+    }
+    #services-flex {
+        width: 100%;
+        @include flex(space-evenly, center, row);
+        flex-wrap: wrap;
+        gap: 30px;
+        div {
+            @include text(300, 20px, 150%);
+            padding: 10px;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        img {
+            width: 80%;
+        }
+        h1 {
+            width: 100%;
+        }
+    }
+}
