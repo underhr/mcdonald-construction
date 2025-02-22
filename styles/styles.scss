@@ -39,7 +39,7 @@ header {
     @include flex(space-evenly, center, row);
     gap: 15px;
     img {
-        width: 40%;
+        width: 350px;
     }
     h1 {
         width: 60%;
@@ -47,6 +47,9 @@ header {
         text-align: center;
         font-size: 30px;
         @include text(500, 30px, 120%);
+        .blue {
+            color: $blue;
+        }
     }
 }
 
@@ -94,21 +97,37 @@ header {
     }
 }
 
-@media only screen and (max-width: 600px) {
+// tablet view
+@media only screen and (max-width: 910px) {
     header {
         flex-direction: column;
         img {
-            width: 80%;
         }
         h1 {
             width: 100%;
         }
     }
+}
 
-    .photo-grid {
+//phone view
+@media only screen and (max-width: 600px) {
+    header {
+        img {
+            width: 80%;
+        }
+    }
+
+    .photo-grid-2 {
         flex-direction: column;
         img {
             height: 200px;
+            width: 100%;
+        }
+    }
+    .photo-grid-3 {
+        flex-direction: column;
+        img {
+            width: 100%;
         }
     }
 }

@@ -29,7 +29,7 @@ header {
   gap: 15px;
 }
 header img {
-  width: 40%;
+  width: 350px;
 }
 header h1 {
   width: 60%;
@@ -40,6 +40,9 @@ header h1 {
   font-weight: 500;
   font-size: 30px;
   line-height: 120%;
+}
+header h1 .blue {
+  color: rgb(61, 96, 215);
 }
 
 #services {
@@ -97,20 +100,29 @@ header h1 {
   padding: 5px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 910px) {
   header {
     flex-direction: column;
-  }
-  header img {
-    width: 80%;
   }
   header h1 {
     width: 100%;
   }
-  .photo-grid {
+}
+@media only screen and (max-width: 600px) {
+  header img {
+    width: 80%;
+  }
+  .photo-grid-2 {
     flex-direction: column;
   }
-  .photo-grid img {
+  .photo-grid-2 img {
     height: 200px;
+    width: 100%;
+  }
+  .photo-grid-3 {
+    flex-direction: column;
+  }
+  .photo-grid-3 img {
+    width: 100%;
   }
 }/*# sourceMappingURL=styles.css.map */
