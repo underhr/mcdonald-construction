@@ -71,13 +71,13 @@ header h1 {
   padding: 10px;
 }
 
-.photo-grid {
+.photo-grid-2 {
   display: flex;
   width: 100vw;
   flex-wrap: wrap;
   margin: 0;
 }
-.photo-grid img {
+.photo-grid-2 img {
   width: 50%;
   height: 300px;
   -o-object-fit: cover;
