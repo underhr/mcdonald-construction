@@ -71,6 +71,19 @@ header h1 {
   padding: 10px;
 }
 
+.photo-grid {
+  display: flex;
+  width: 100vw;
+  flex-wrap: wrap;
+  margin: 0;
+}
+.photo-grid img {
+  width: 50%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 @media only screen and (max-width: 600px) {
   header {
     flex-direction: column;
@@ -80,5 +93,8 @@ header h1 {
   }
   header h1 {
     width: 100%;
+  }
+  .photo-grid img {
+    height: 200px;
   }
 }/*# sourceMappingURL=styles.css.map */
