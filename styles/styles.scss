@@ -73,12 +73,24 @@ header {
 .photo-grid-2 {
     display: flex;
     width: 100vw;
-    flex-wrap: wrap;
     margin: 0;
     img {
         width: 50%;
         height: 300px;
         object-fit: cover;
+        padding: 5px;
+    }
+}
+
+.photo-grid-3 {
+    display: flex;
+    width: 100vw;
+    margin: 0;
+    img {
+        width: 33%;
+        height: 250px;
+        object-fit: cover;
+        padding: 5px;
     }
 }
 
@@ -94,6 +106,7 @@ header {
     }
 
     .photo-grid {
+        flex-direction: column;
         img {
             height: 200px;
         }
