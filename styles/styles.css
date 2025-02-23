@@ -7,17 +7,13 @@
   box-sizing: border-box;
 }
 
-html {
-  padding-top: 20px;
-}
-
 body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   gap: 50px;
-  height: 100vh;
+  min-height: 100vh;
   padding: 20px;
 }
 
@@ -39,7 +35,7 @@ header h1 {
   font-family: kantumruy;
   font-weight: 500;
   font-size: 30px;
-  line-height: 120%;
+  line-height: 160%;
 }
 header h1 .blue {
   color: rgb(61, 96, 215);
@@ -100,11 +96,23 @@ header h1 .blue {
   padding: 5px;
 }
 
+form {
+  background-color: rgb(61, 96, 215);
+  color: white;
+  width: 100%;
+}
+
 @media only screen and (max-width: 910px) {
   header {
     flex-direction: column;
   }
   header h1 {
+    width: 100%;
+  }
+  .photo-grid-3 {
+    flex-direction: column;
+  }
+  .photo-grid-3 img {
     width: 100%;
   }
 }
@@ -117,12 +125,6 @@ header h1 .blue {
   }
   .photo-grid-2 img {
     height: 200px;
-    width: 100%;
-  }
-  .photo-grid-3 {
-    flex-direction: column;
-  }
-  .photo-grid-3 img {
     width: 100%;
   }
 }/*# sourceMappingURL=styles.css.map */

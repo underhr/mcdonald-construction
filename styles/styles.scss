@@ -24,14 +24,10 @@ $blue: rgb(61, 96, 215);
     box-sizing: border-box;
 }
 
-html {
-    padding-top: 20px;
-}
-
 body {
     @include flex(flex-start, center, column);
     gap: 50px;
-    height: 100vh;
+    min-height: 100vh;
     padding: 20px;
 }
 
@@ -46,7 +42,7 @@ header {
         padding: 10px;
         text-align: center;
         font-size: 30px;
-        @include text(500, 30px, 120%);
+        @include text(500, 30px, 160%);
         .blue {
             color: $blue;
         }
@@ -97,13 +93,25 @@ header {
     }
 }
 
+form {
+
+    background-color: $blue;
+    color: white;
+    width: 100%;
+}
+
 // tablet view
 @media only screen and (max-width: 910px) {
     header {
         flex-direction: column;
-        img {
-        }
         h1 {
+            width: 100%;
+        }
+    }
+
+    .photo-grid-3 {
+        flex-direction: column;
+        img {
             width: 100%;
         }
     }
@@ -121,12 +129,6 @@ header {
         flex-direction: column;
         img {
             height: 200px;
-            width: 100%;
-        }
-    }
-    .photo-grid-3 {
-        flex-direction: column;
-        img {
             width: 100%;
         }
     }
