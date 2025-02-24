@@ -10,16 +10,20 @@
 <body>
     <header>
         <img src="images/logo.png" alt="McDonald Construction Logo">
-        <h1>Our goal is to exceed our customers' expectations on every job. <span class="blue">We appreciate your business.</span></h1>
     </header>
+
+    <div id="about">
+        <h1 class="section-heading">About Us</h1>
+        <p>McDonald Construction is a locally owned business serving all of the surrounding areas of Pensacola, FL. We specialize in all outdoor construction and landscaping projects. Our goal is to exceed our customers' expectations on every job. Thank you for your business and we look forward to working with you.</p>
+    </div>
     
     <div class="photo-grid-2">
         <img src="images/grass.PNG">
         <img src="images/flower-bed.PNG">
     </div>
 
-    <div id="services">
-        <h1>Services</h1>
+    <div id="services" class="flex-2-item">
+        <h1 class="section-heading">Services</h1>
         <div id="services-flex">
             <div>Landscape Design</div>
             <div>Sod</div>
@@ -38,25 +42,42 @@
         </div>
     </div>
 
-    <div class="photo-grid-3">
-        <img src="images/house3.PNG">
-        <img src="images/house2.PNG">
-        <img src="images/house1.PNG">
+    <div class="flex-2 flex-2-bottom">
+        <div class="photo-grid-6 flex-2-item">
+            <img src="images/stone-path.png">
+            <img src="images/concrete.png">
+            <img src="images/sea-wall.PNG">
+            <img src="images/excavator.png">
+            <img src="images/house2.PNG">
+            <img src="images/sewer4.PNG">
+        </div>
+
+        <form id="contact" action="https://formsubmit.co/McDonaldconstruction850@gmail.com" method="POST" class="flex-2-item">
+            <h1 class="section-heading">Contact Us</h1>
+            <div class="form-item">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder="Johnny Appleseed">
+            </div>
+            <div class="form-item">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="YourEmail@gmail.com">
+            </div>
+            <div class="form-item">
+                <label for="phone-number">Phone Number:</label>
+                <input type="tel" name="phone-number" id="phone-number" placeholder="(555)555-5555">
+            </div>
+            <div class="form-item">
+                <label for="comment">Comment:</label>
+                <textarea name="comment" id="comment" draggable="true" placeholder="Leave a comment"></textarea>
+            </div>
+            <button id="submitButton">Submit</button>
+        </form>
     </div>
 
-    <form id="contact" action="https://formspree.io/f/xkgoazzl" method="POST">
-        <h1>Contact Us</h1>
-
-        <label for="name">Name:</label>
-        <input type="text" name="name" id="name">
-
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="email">
-
-        <label for="comment">Comment:</label>
-        <textarea name="comment" id="comment" draggable="true"></textarea>
-        <button id="submitButton">Submit</button>
-    </form>
+    <footer>
+        <p>&copy;McDonald Construction 2025</p>
+        <a href="https://www.facebook.com/profile.php?id=61559686753593"><img src="images/facebook.png" alt="Facebook"></a>
+    </footer>
 
     <script src="index.js"></script>
 </body>
