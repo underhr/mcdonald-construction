@@ -12,7 +12,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  gap: 50px;
+  gap: 30px;
   min-height: 100vh;
   padding-top: 50px;
 }
@@ -21,13 +21,6 @@ header img {
   width: 350px;
 }
 
-#about {
-  padding: 60px 40px;
-  text-align: center;
-  color: white;
-  background-color: rgb(61, 96, 215);
-  width: 100vw;
-}
 #about p {
   font-family: kantumruy;
   font-weight: 300;
@@ -48,6 +41,14 @@ header img {
   padding: 5px;
 }
 
+.section {
+  background-color: rgb(61, 96, 215);
+  color: white;
+  padding: 60px 40px;
+  text-align: center;
+  width: 100vw;
+}
+
 .section-heading {
   font-family: kantumruy;
   font-weight: 600;
@@ -59,23 +60,7 @@ header img {
   margin-bottom: 50px;
 }
 
-.flex-2 {
-  width: 100vw;
-  background-color: rgb(61, 96, 215);
-  display: flex;
-}
-.flex-2 .flex-2-item {
-  width: 50%;
-}
-
-#services {
-  padding: 60px 40px;
-  text-align: center;
-  color: white;
-  background-color: rgb(61, 96, 215);
-  width: 100vw;
-}
-#services #services-flex {
+#services-flex {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -83,7 +68,7 @@ header img {
   flex-wrap: wrap;
   gap: 30px;
 }
-#services #services-flex div {
+#services-flex div {
   font-family: kantumruy;
   font-weight: 300;
   font-size: 20px;
@@ -91,22 +76,9 @@ header img {
   padding: 10px;
 }
 
-.photo-grid-6 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 0;
-}
-.photo-grid-6 img {
-  width: 50%;
-  height: 260px;
-  padding: 4px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 form {
   background-color: rgb(61, 96, 215);
+  width: 100vw;
   color: white;
   padding: 60px 40px;
   display: flex;
@@ -116,7 +88,7 @@ form {
   gap: 30px;
 }
 form .form-item {
-  width: 100%;
+  width: 500px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -131,7 +103,7 @@ form .form-item label {
   margin-left: 15px;
 }
 form .form-item input, form .form-item textarea {
-  width: 100%;
+  width: 500px;
   min-height: 40px;
   font-size: 20px;
   border-radius: 10px;
@@ -143,7 +115,7 @@ form #submitButton {
   font-weight: 500;
   font-size: 30px;
   line-height: 100%;
-  width: 100%;
+  width: 500px;
   height: 60px;
   border-radius: 10px;
   border: none;
@@ -155,6 +127,20 @@ form #submitButton:hover {
   color: white;
   cursor: pointer;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+.photo-grid-3-2-1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+}
+.photo-grid-3-2-1 img {
+  width: 33.333%;
+  height: 260px;
+  padding: 4px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 footer {
@@ -178,24 +164,20 @@ footer a img {
 }
 
 @media only screen and (max-width: 910px) {
-  .flex-2 {
-    flex-direction: column;
+  .photo-grid-3-2-1 img {
+    width: 50%;
   }
-  .flex-2 .flex-2-item {
-    width: 100%;
-  }
-  .photo-grid-3 {
-    flex-direction: column;
-  }
-  .photo-grid-3 img {
-    width: 100%;
-  }
-  .photo-grid-6 img {
-    width: 33.333%;
-    height: 200px;
+  .photo-grid-3-2-1 .img1 {
+    display: none;
   }
 }
 @media only screen and (max-width: 600px) {
+  .photo-grid-3-2-1 img {
+    width: 100%;
+  }
+  .photo-grid-3-2-1 .img2 {
+    display: none;
+  }
   .photo-grid-2 {
     flex-direction: column;
   }
@@ -203,10 +185,7 @@ footer a img {
     height: 200px;
     width: 100%;
   }
-  .photo-grid-6 img {
-    width: 50%;
-  }
-  .form-item, #submitButton {
+  .form-item, #submitButton, input, textarea {
     max-width: 90vw;
   }
 }/*# sourceMappingURL=styles.css.map */
