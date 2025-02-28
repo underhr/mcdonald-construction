@@ -17,6 +17,29 @@ body {
   padding-top: 50px;
 }
 
+.section {
+  background-color: rgb(61, 96, 215);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  padding: 60px 40px;
+  text-align: center;
+  width: 100vw;
+}
+
+.section-heading {
+  font-family: kantumruy;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 100%;
+  margin: 20px;
+  text-align: center;
+  text-shadow: 0px 0px 5px rgba(1, 11, 53, 0.2);
+  margin-bottom: 50px;
+}
+
 header img {
   width: 350px;
 }
@@ -41,38 +64,24 @@ header img {
   padding: 5px;
 }
 
-.section {
-  background-color: rgb(61, 96, 215);
-  color: white;
-  padding: 60px 40px;
-  text-align: center;
-  width: 100vw;
-}
-
-.section-heading {
-  font-family: kantumruy;
-  font-weight: 600;
-  font-size: 35px;
-  line-height: 100%;
-  margin: 20px;
-  text-align: center;
-  text-shadow: 0px 0px 5px rgba(1, 11, 53, 0.2);
-  margin-bottom: 50px;
-}
-
 #services-flex {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 40px;
+  max-width: 1000px;
 }
 #services-flex div {
   font-family: kantumruy;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 23px;
   line-height: 150%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
   padding: 10px;
 }
 
@@ -128,6 +137,15 @@ form #submitButton:hover {
   cursor: pointer;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
 }
+form p {
+  font-family: kantumruy;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 100%;
+}
+form p a {
+  color: white;
+}
 
 .photo-grid-3-2-1 {
   display: flex;
@@ -137,7 +155,7 @@ form #submitButton:hover {
 }
 .photo-grid-3-2-1 img {
   width: 33.333%;
-  height: 260px;
+  height: 300px;
   padding: 4px;
   -o-object-fit: cover;
      object-fit: cover;

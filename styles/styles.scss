@@ -29,6 +29,23 @@ body {
     padding-top: 50px;
 }
 
+.section {
+    background-color: $blue;
+    @include flex(center, center, column);
+    color: white;
+    padding: 60px 40px;
+    text-align: center;
+    width: 100vw;
+}
+
+.section-heading {        
+    @include text(600, 35px, 100%);
+    margin: 20px;
+    text-align: center;
+    text-shadow: 0px 0px 5px rgba(1, 11, 53, 0.2);
+    margin-bottom: 50px;
+}
+
 header img{
     width: 350px;
 }
@@ -49,27 +66,14 @@ header img{
     }
 }
 
-.section {
-    background-color: $blue;
-    color: white;
-    padding: 60px 40px;
-    text-align: center;
-    width: 100vw;
-}
-.section-heading {        
-    @include text(600, 35px, 100%);
-    margin: 20px;
-    text-align: center;
-    text-shadow: 0px 0px 5px rgba(1, 11, 53, 0.2);
-    margin-bottom: 50px;
-}
-
 #services-flex {
     @include flex(space-evenly, center, row);
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 40px;
+    max-width: 1000px;
     div {
-        @include text(300, 20px, 150%);
+        @include text(300, 23px, 150%);
+        @include flex(center, center, row);
         padding: 10px;
     }
 }
@@ -113,6 +117,12 @@ form {
             box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
         }
     }
+    p {
+        @include text(500, 22px, 100%);
+        a {
+            color: white;
+        }
+    }
 }
 
 .photo-grid-3-2-1 {
@@ -122,7 +132,7 @@ form {
     margin: 0;
     img {
         width: 33.333%;
-        height: 260px;
+        height: 300px;
         padding: 4px;
         object-fit: cover;
     }
@@ -142,6 +152,7 @@ footer {
     }
 }
 
+
 // tablet view
 @media only screen and (max-width: 910px) {
     .photo-grid-3-2-1 {
@@ -156,8 +167,6 @@ footer {
 
 //phone view
 @media only screen and (max-width: 600px) {
-
-
     .photo-grid-3-2-1 {
         img {
             width: 100%;
