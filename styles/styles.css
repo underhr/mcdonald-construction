@@ -126,6 +126,13 @@ form .form-item .formError {
   color: black;
   font-style: italic;
 }
+form .form-item label {
+  font-family: kantumruy;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  margin-left: 15px;
+}
 form .form-item input, form .form-item textarea {
   width: 500px;
   min-height: 40px;

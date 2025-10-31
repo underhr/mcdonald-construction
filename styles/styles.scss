@@ -108,6 +108,10 @@ form {
             color: black;
             font-style: italic;
         }
+        label {
+            @include text(400, 20px, 100%);
+            margin-left: 15px;
+        }
         input, textarea {
             width: 500px;
             min-height: 40px;
