@@ -21,6 +21,10 @@ body {
   padding-top: 50px;
 }
 
+header img {
+  width: 350px;
+}
+
 .section {
   background-color: rgb(61, 96, 215);
   display: flex;
@@ -32,20 +36,14 @@ body {
   text-align: center;
   width: 100vw;
 }
-
-.section-heading {
+.section h1 {
   font-family: kantumruy;
   font-weight: 600;
   font-size: 35px;
   line-height: 100%;
   margin: 20px;
   text-align: center;
-  text-shadow: 0px 0px 5px rgba(1, 11, 53, 0.2);
   margin-bottom: 50px;
-}
-
-header img {
-  width: 350px;
 }
 
 #about p {
@@ -55,49 +53,36 @@ header img {
   line-height: 180%;
 }
 
-.photo-grid-2 {
-  display: flex;
-  width: 100vw;
-  margin: 0;
-}
-.photo-grid-2 img {
-  width: 50%;
-  height: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  padding: 5px;
-}
-
 #services-flex {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 40px;
+  flex-direction: column;
   max-width: 1000px;
+  gap: 20px;
 }
-#services-flex div {
+#services-flex .service {
   font-family: kantumruy;
   font-weight: 300;
   font-size: 23px;
   line-height: 150%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: row;
-  padding: 10px;
+  gap: 40px;
+  text-align: left;
+  padding: 20px;
 }
-
-form {
-  background-color: rgb(61, 96, 215);
-  width: 100vw;
-  color: white;
-  padding: 60px 40px;
+#services-flex .service .services-txt {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  gap: 20px;
+}
+#services-flex .service .services-txt h2 {
+  font-weight: 500;
+}
+form {
   gap: 30px;
 }
 form .form-item {
@@ -169,20 +154,6 @@ form p a {
   color: white;
 }
 
-.photo-grid-3-2-1 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 0;
-}
-.photo-grid-3-2-1 img {
-  width: 33.333%;
-  height: 300px;
-  padding: 4px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 footer {
   background-color: rgb(61, 96, 215);
   color: white;
@@ -199,32 +170,8 @@ footer {
   flex-direction: row;
   gap: 20px;
 }
-footer a img {
-  height: 30px;
-}
 
-@media only screen and (max-width: 910px) {
-  .photo-grid-3-2-1 img {
-    width: 50%;
-  }
-  .photo-grid-3-2-1 .img1 {
-    display: none;
-  }
-}
 @media only screen and (max-width: 600px) {
-  .photo-grid-3-2-1 img {
-    width: 100%;
-  }
-  .photo-grid-3-2-1 .img3 {
-    display: none;
-  }
-  .photo-grid-2 {
-    flex-direction: column;
-  }
-  .photo-grid-2 img {
-    height: 200px;
-    width: 100%;
-  }
   .form-item, #submitButton, input, textarea {
     max-width: 90vw;
   }

@@ -33,6 +33,10 @@ body {
     padding-top: 50px;
 }
 
+header img{
+    width: 350px;
+}
+
 .section {
     background-color: $blue;
     @include flex(center, center, column);
@@ -40,54 +44,43 @@ body {
     padding: 60px 40px;
     text-align: center;
     width: 100vw;
-}
-
-.section-heading {        
-    @include text(600, 35px, 100%);
-    margin: 20px;
-    text-align: center;
-    text-shadow: 0px 0px 5px rgba(1, 11, 53, 0.2);
-    margin-bottom: 50px;
-}
-
-header img{
-    width: 350px;
+    h1 { 
+        @include text(600, 35px, 100%);
+        margin: 20px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
 }
 
 #about p {
     @include text(300, 20px, 180%);
 }
 
-.photo-grid-2 {
-    display: flex;
-    width: 100vw;
-    margin: 0;
-    img {
-        width: 50%;
-        height: 300px;
-        object-fit: cover;
-        padding: 5px;
-    }
-}
-
 #services-flex {
-    @include flex(space-evenly, center, row);
-    flex-wrap: wrap;
-    gap: 40px;
+    @include flex(space-evenly, center, column);
     max-width: 1000px;
-    div {
+    gap: 20px;
+    .service {
         @include text(300, 23px, 150%);
-        @include flex(center, center, row);
-        padding: 10px;
+        @include flex(flex-start, center, row);
+        gap: 40px;
+        text-align: left;
+        padding: 20px;
+        .services-txt {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            h2 {
+                font-weight: 500;
+            }
+            p {
+
+            }
+        }
     }
 }
 
 form {
-    background-color: $blue;
-    width: 100vw;
-    color: white;
-    padding: 60px 40px;
-    @include flex(center, center, column);
     gap: 30px;
     .form-item {
         width: 500px;
@@ -144,19 +137,6 @@ form {
     }
 }
 
-.photo-grid-3-2-1 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0;
-    img {
-        width: 33.333%;
-        height: 300px;
-        padding: 4px;
-        object-fit: cover;
-    }
-}
-
 footer {
     background-color: $blue;
     color: white;
@@ -166,43 +146,15 @@ footer {
     text-align: center;
     @include flex(center, center, row);
     gap: 20px;
-    a img {
-        height: 30px;
-    }
 }
 
 
 // tablet view
 @media only screen and (max-width: 910px) {
-    .photo-grid-3-2-1 {
-        img {
-            width: 50%;
-        }
-        .img1 {
-            display: none;
-        }
-    }
 }
 
 //phone view
 @media only screen and (max-width: 600px) {
-    .photo-grid-3-2-1 {
-        img {
-            width: 100%;
-        }
-        .img3 {
-            display: none;
-        }
-    }
-
-    .photo-grid-2 {
-        flex-direction: column;
-        img {
-            height: 200px;
-            width: 100%;
-        }
-    }
-
     .form-item, #submitButton, input, textarea {
         max-width: 90vw;
     }
