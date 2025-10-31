@@ -1,0 +1,224 @@
+@font-face {
+  font-family: kantumruy;
+  src: url("../fonts/Kantumruy_Pro/KantumruyPro-VariableFont_wght.ttf");
+}
+.hidden {
+  display: none;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  min-height: 100vh;
+  padding-top: 50px;
+}
+
+.section {
+  background-color: rgb(61, 96, 215);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  padding: 60px 40px;
+  text-align: center;
+  width: 100vw;
+}
+
+.section-heading {
+  font-family: kantumruy;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 100%;
+  margin: 20px;
+  text-align: center;
+  text-shadow: 0px 0px 5px rgba(1, 11, 53, 0.2);
+  margin-bottom: 50px;
+}
+
+header img {
+  width: 350px;
+}
+
+#about p {
+  font-family: kantumruy;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 180%;
+}
+
+.photo-grid-2 {
+  display: flex;
+  width: 100vw;
+  margin: 0;
+}
+.photo-grid-2 img {
+  width: 50%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 5px;
+}
+
+#services-flex {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1000px;
+}
+#services-flex div {
+  font-family: kantumruy;
+  font-weight: 300;
+  font-size: 23px;
+  line-height: 150%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 10px;
+}
+
+form {
+  background-color: rgb(61, 96, 215);
+  width: 100vw;
+  color: white;
+  padding: 60px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+form .form-item {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  font-family: kantumruy;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+}
+form .form-item .labelTxt {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+form .form-item label {
+  margin-left: 15px;
+}
+form .form-item .formError {
+  font-weight: 500;
+  margin-right: 15px;
+  color: black;
+  font-style: italic;
+}
+form .form-item input, form .form-item textarea {
+  width: 500px;
+  min-height: 40px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  padding: 15px;
+}
+form #submitButton {
+  font-family: kantumruy;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 100%;
+  width: 500px;
+  height: 60px;
+  border-radius: 10px;
+  border: none;
+  background-color: white;
+  color: rgb(61, 96, 215);
+}
+form #submitButton:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+  cursor: pointer;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+}
+form p {
+  font-family: kantumruy;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 100%;
+}
+form p a {
+  color: white;
+}
+
+.photo-grid-3-2-1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+}
+.photo-grid-3-2-1 img {
+  width: 33.333%;
+  height: 300px;
+  padding: 4px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+footer {
+  background-color: rgb(61, 96, 215);
+  color: white;
+  font-family: kantumruy;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 100%;
+  width: 100vw;
+  padding: 40px 60px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+}
+footer a img {
+  height: 30px;
+}
+
+@media only screen and (max-width: 910px) {
+  .photo-grid-3-2-1 img {
+    width: 50%;
+  }
+  .photo-grid-3-2-1 .img1 {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .photo-grid-3-2-1 img {
+    width: 100%;
+  }
+  .photo-grid-3-2-1 .img3 {
+    display: none;
+  }
+  .photo-grid-2 {
+    flex-direction: column;
+  }
+  .photo-grid-2 img {
+    height: 200px;
+    width: 100%;
+  }
+  .form-item, #submitButton, input, textarea {
+    max-width: 90vw;
+  }
+}/*# sourceMappingURL=styles.css.map */
