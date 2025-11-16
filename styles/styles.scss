@@ -63,6 +63,7 @@ header img{
     .service {
         @include text(300, 23px, 150%);
         @include flex(flex-start, center, row);
+        width: 100%;
         gap: 40px;
         text-align: left;
         padding: 20px;

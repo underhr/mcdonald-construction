@@ -70,6 +70,7 @@ header img {
   justify-content: flex-start;
   align-items: center;
   flex-direction: row;
+  width: 100%;
   gap: 40px;
   text-align: left;
   padding: 20px;
