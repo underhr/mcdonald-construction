@@ -53,6 +53,11 @@ header img {
   line-height: 180%;
 }
 
+#find-us {
+  width: 100%;
+  max-width: 500px;
+}
+
 #services-flex {
   display: flex;
   justify-content: space-evenly;

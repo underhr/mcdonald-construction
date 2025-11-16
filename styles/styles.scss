@@ -56,6 +56,11 @@ header img{
     @include text(300, 20px, 180%);
 }
 
+#find-us {
+    width: 100%;
+    max-width: 500px;
+}
+
 #services-flex {
     @include flex(space-evenly, center, column);
     max-width: 1000px;
